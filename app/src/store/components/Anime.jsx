@@ -17,7 +17,7 @@ const StyledImg = styled.img`
 `
 
 const Anime = (props) => {
-    console.log(props, 'this is props in comp')
+    // console.log(props, 'this is props in comp')
     useEffect(() => {
         props.fetchAnime();
     }, [])
@@ -31,7 +31,6 @@ const Anime = (props) => {
                     {props.data.map((data) => (
 
                         <StyledDiv>
-                            
                             {/* <StyledImg src={data.image_url}>{data.image_url}</StyledImg> */}
                             <h2 key={data.mal_id}>{data.title}</h2>
                             <h2>{data.synopsis}</h2>
@@ -57,7 +56,7 @@ const Anime = (props) => {
 };
 
 const mapStateToProps = (state) => {
-    console.log(state, 'this is state in anime')
+    // console.log(state, 'this is state in anime')
     return {
         data: state.data,
         imageURL: state.imageURL,
