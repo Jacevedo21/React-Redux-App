@@ -1,0 +1,1 @@
+export { animeReducer as reducer } from './animeReducer'
